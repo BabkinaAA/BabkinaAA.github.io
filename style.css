@@ -1,0 +1,97 @@
+@import './styles/bot-left.css';
+@import './styles/top-left.css';
+@import './styles/current-weather.css';
+@import './styles/forecast.css';
+
+
+.body {
+    --font-prmary: 'Montserrat';
+    display: flex;
+    background-color: linear-gradient(118deg, #1560D4 2.08%, rgba(180, 41, 166, 0.56) 101.39%);
+    color: white;
+    justify-content: center;
+    font-family: var(--font-prmary);
+}
+
+.container {
+    display: flex;
+    background-color: #343D4B;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center; 
+}
+
+.left-block {
+    display: flex;   
+    padding: 40px;
+    width: 25vw;
+    min-height: 60vh;
+    border-radius: 30px;
+    background: linear-gradient(152deg, rgba(155, 218, 221, 0.9) -0.04%, rgba(83, 91, 230, 0.90) 100%),url("./images/board-bg.png");
+    color: white;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background: #222831;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 32px;
+}
+
+.location-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90.8deg, rgba(144, 217, 224, 0.9) 0.2%, rgba(84, 96, 230, 0.9) 100%);
+    border-radius: 10px;
+}
+
+.location-button_text {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .left-block {
+      display: flex;
+      justify-content: center;
+      min-height: 50vh; 
+      min-width: 100vw;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .column {
+      display: flex;
+      justify-content: normal;
+    }
+  }
