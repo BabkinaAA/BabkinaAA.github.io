@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @font-face {
+            font-family: Montserrat;
+            src: url(/Font/Montserrat-Medium.ttf);
+        }
+    </style>
+</head>
+<body>
+    <script src="./training.js"></script>
+    <div class="container">
+            <div class="left-block">
+                <div class="column">
+                    <div class="top-left">
+                        <div class="top-left__day">
+                            Tuesday
+                        </div>
+                        <div class="top-left__date">
+                            20 Jun 2022
+                        </div>
+                        <div class="top-left__location">
+                            <div class="top-left__location-mark">
+                                <img src="images/Location.png" height="27px" width="27px">
+                            </div>
+                            <div class="top-left__location-place">
+                                Biarritz, FR
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bot-left">
+                        <div class="bot-left__weather-symbol">
+                            <img src="images/Sun.svg" height="95px" width="95px">
+                        </div>
+                        <div class="bot-left__temp">
+                            29 °C
+                        </div>
+                        <div class="bot-left__weather">
+                            Sunny
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="content">
+                    <div class="current-weather">
+                        <div class="current-weather__item">
+                            <div class="current-weather__item-label">
+                                PRECIPITATION
+                            </div>
+                            <div class="current-weather__item-value">
+                                0%
+                            </div>
+                        </div>
+                        <div class="current-weather__item">
+                            <div class="current-weather__item-label">
+                                HUMIDITY
+                            </div>
+                            <div class="current-weather__item-value">
+                                42%
+                            </div>
+                        </div>
+                        <div class="current-weather__item">
+                            <div class="current-weather__item-label">
+                                WIND
+                            </div>
+                            <div class="current-weather__item-value">
+                                3 km/h
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <div class="forecast__widget-today">
+                            <div class="widget-today-icon">
+                                <img src="images/Sun.png" height="55px" width="55px">
+                            </div>
+                            <div class="widget-today-name">
+                                Tue
+                            </div>
+                            <div class="widget-today-temp-value">
+                                30 °C
+                            </div>
+                        </div>
+                        <div class="forecast__widget">
+                            <div class>
+                                <img src="images/cloud-sun.png" height="54px" width="54px">
+                            </div>
+                            <div class="widget-day-name">
+                                Wed
+                            </div>
+                            <div class="widget-temp-value">
+                                22 °C
+                            </div>
+                        </div>
+                        <div class="forecast__widget">
+                            <div class>
+                                <img src="images/cloud-rain.png" height="54px" width="54px">
+                            </div>
+                            <div class="widget-day-name">
+                                Thu
+                            </div>
+                            <div class="widget-temp-value">
+                                06 °C
+                            </div>
+                        </div>
+                        <div class="forecast__widget">
+                            <div class>
+                                <img src="images/Sun-white.png" height="54,47px" width="54,02px">
+                            </div>
+                            <div class="widget-day-name">
+                                Fry
+                            </div>
+                            <div class="widget-temp-value">
+                                26 °C
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-button">
+                        <div class="top-left__location-mark">
+                            <img src="images/Location.png" height="33px" width="33px">
+                        </div>
+                        <div class="location-button_text">
+                            Change Location
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>           
+
+</body>
+</html>
